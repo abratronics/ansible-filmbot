@@ -1,0 +1,6 @@
+- name: filmbot 
+  hosts: localhost
+  connection: local
+
+  roles:
+    - filmbot

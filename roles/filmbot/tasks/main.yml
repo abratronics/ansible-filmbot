@@ -1,0 +1,14 @@
+---
+# tasks file for filmbot
+#
+- name: beautiful soup script
+  shell: python3 ./extract_info.py
+  register: soup_result 
+
+- name: Send a message to the Discord channel
+  community.general.discord:
+    webhook_id: "XXX"
+    webhook_token: "YYY"
+    content: "{{ item }}"
+    username: FILMBOT BOOP BEEP
+  loop: "{{ soup_result.stdout_lines }}"
