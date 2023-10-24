@@ -8,7 +8,7 @@ film festivals.
 
 The URL in the python script can be changed. 
 
-This is quick and dirty. Nothing more. 💩💩💩
+This is quick and dirty. Nothing more. :)
 
 # dependencies 
 
